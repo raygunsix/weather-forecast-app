@@ -4,6 +4,10 @@ import requests
 API_KEY = os.getenv("API_KEY")
 
 def get_data(place, forecast_days=None):
+    """ 
+    Returns weather forcast data for the specified place
+    If no data is available, an empty list is returned
+    """
     try:
         url = "http://api.openweathermap.org/data/2.5/forecast?" \
             f"q={place}&" \
