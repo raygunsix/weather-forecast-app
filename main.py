@@ -36,4 +36,4 @@ if place:
             image_paths = [images[condition] for condition in sky_conditions]
             st.image(image_paths, width=115)
     else:
-        status_message = st.info("No data for that city. Please try again")
+        status_message = st.warning("No data for that city. Please try again")
