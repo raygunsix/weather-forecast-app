@@ -23,7 +23,7 @@ if place:
 
     if filtered_data:
         if option == "Temperature":
-            temperatures = [dict["main"]["temp"]/10 
+            temperatures = [dict["main"]["temp"] / 10 
                             for dict in filtered_data]
             dates = [dict["dt_txt"] for dict in filtered_data]
             # Create temp plot
